@@ -43,8 +43,7 @@ function getUserInput() {
 // store in new variable
 // add list items variable  to ol
 function addUserInputToList() {
-  li.innerText = input.value;
-  document.ol.appendChild("li");
+  list.appendChild(li).innerHTML = `<li>${input.value}</li>`;
 }
 
 // call function
